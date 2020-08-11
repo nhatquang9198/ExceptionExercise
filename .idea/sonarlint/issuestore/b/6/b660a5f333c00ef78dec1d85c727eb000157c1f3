@@ -1,0 +1,11 @@
+
+]
+java:S1128";Remove this unused import 'org.omg.SendingContext.RunTime'.(ºÎ˜Áùÿÿÿÿ8œÄÇè½.
+]	java:S125"<This block of commented-out lines of code should be removed.(×«èşÿÿÿÿ8çÛÆè½.
+R
+java:S1143"5Remove this return statement from this finally block.(›…Ú8çÛÆè½.
+b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ÿó®º8çÛÆè½.
+]	java:S125"<This block of commented-out lines of code should be removed.(ŠŸù±üÿÿÿÿ8çÛÆè½.
+]	java:S125"<This block of commented-out lines of code should be removed.(ïêşÿÿÿÿ8çÛÆè½.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8¼‰ûÚ½.
+]	java:S125"<This block of commented-out lines of code should be removed.(Ò´“Éıÿÿÿÿ8½ìœÙ½.

@@ -1,7 +1,14 @@
+import org.omg.SendingContext.RunTime;
+
 public class Test {
     // Trainee should comment/uncomment the codes to play around and understand the code flow
     public static void main(String[] args) {
-        int result = tryCatchExercise();
+        int result = -1;
+        try {
+            result = tryCatchExercise();
+        }catch (RuntimeException e){
+            e.printStackTrace();
+        }
         System.out.println(result);
     }
 
@@ -9,11 +16,11 @@ public class Test {
         try {
             doSomething();
             return 0;
-        } catch (RuntimeException e) {
-            return 1;
+//        } catch (RuntimeException e) {
+//            return 1;
         } catch (IllegalArgumentException | NullPointerException e) {
-            // throw new RuntimeException("What will happen? What is missing here?");
-            return 2;
+            throw new RuntimeException("What will happen? What is missing here?");
+            //return 2;
         } finally {
             // throw new IllegalArgumentException("What is missing here?");
             return 3;
@@ -22,6 +29,6 @@ public class Test {
 
     private static void doSomething() {
         // throw new Exception("This is an exception, this exception should always be presented in all stack trace");
-        // throw new NullPointerException("This is an exception, this exception should always be presented in all stack trace");
+        throw new NullPointerException("This is an exception, this exception should always be presented in all stack trace");
     }
 }
